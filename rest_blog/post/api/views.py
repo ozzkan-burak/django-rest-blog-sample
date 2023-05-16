@@ -1,8 +1,8 @@
 #Listelme işlemleri için kullanılan class
-from rest_framework.generics import ListAPIViews
+from rest_framework.generics import ListAPIView
 
 from post.models import Post
 
-class PostListAPIView(ListAPIViews):
+class PostListAPIView(ListAPIView):
   queryset = Post.objects.all()
   
